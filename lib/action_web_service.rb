@@ -2,7 +2,7 @@ $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
 module ActionWebService
-  VERSION = '2.3.8'
+  VERSION = ActionWebService::VERSION::STRING
 end
 
 begin

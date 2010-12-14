@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Andrew Forward (forked from Leon Breedt, Kent Sibilev)"]
   s.email       = ["andrew.forward@cenx.com"]
   s.homepage    = "http://github.com/aforward/actionwebservice"
-  s.summary     = %q{Porting actionwebservice to work with Rails 2.3.8}
-  s.description = %q{Porting actionwebservice to work with Rails 2.3.8}
+  s.summary     = %q{Porting actionwebservice to work with Rails 2.3.8.2}
+  s.description = %q{Porting actionwebservice to work with Rails 2.3.8.2}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
