@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{geokit-premier}
-  s.version = "0.0.4"
+  s.name = %q{actionwebservice}
+  s.version = "2.3.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.author = "Andrew Forward (forked from Leon Breedt, Kent Sibilev)"
