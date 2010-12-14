@@ -1,0 +1,15 @@
+PATH
+  remote: .
+  specs:
+    aforward-actionwebservice (2.3.8.3)
+
+GEM
+  remote: http://rubygems.org/
+  remote: http://gemcutter.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aforward-actionwebservice!
