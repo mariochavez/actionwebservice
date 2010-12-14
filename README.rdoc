@@ -1,10 +1,37 @@
-= Action Web Service -- Serving APIs on rails
+= actionwebservice
+
+* https://github.com/aforward/actionwebservice
+
+= FORKED BASED ON ISSUES WITH RAILES 2.3.8
+
+Our project team was moving from managing gems in the environment.rb file to bundler, and an incompatibility cropped up.
+
+The old gem was included via (environment.rb):
+  config.gem 'datanoise-actionwebservice', :lib => 'actionwebservice'
+
+The new gem was included via (Gemfile):
+  gem 'datanoise-actionwebservice'
+  
+But the following error arose:
+
+  Bundler could not find compatible versions for gem "actionpack":
+  In Gemfile:
+    datanoise-actionwebservice depends on
+      actionpack (= 2.1.0, )
+
+    rails (= 2.3.8) depends on
+      actionpack (2.3.8)  
+
+
+== DESCRIPTION:
+
+Action Web Service -- Serving APIs on rails
 
 Action Web Service provides a way to publish interoperable web service APIs with
 Rails without spending a lot of time delving into protocol details.
 
 
-== Features
+== FEATURES/PROBLEMS:
 
 * SOAP RPC protocol support
 * Dynamic WSDL generation for APIs
@@ -14,18 +41,12 @@ Rails without spending a lot of time delving into protocol details.
 * Type signature hints to improve interoperability with static languages
 * Active Record model class support in signatures
 
-
-== Defining your APIs
-
 You specify the methods you want to make available as API methods in an
 ActionWebService::API::Base derivative, and then specify this API
 definition class wherever you want to use that API. 
 
 The implementation of the methods is done separately from the API
 specification.
-
-
-==== Method name inflection
 
 Action Web Service will camelcase the method names according to Rails Inflector
 rules for the API visible to public callers. What this means, for example,
@@ -36,6 +57,7 @@ succeed.
 If you do not desire this behaviour, you can turn it off with the
 ActionWebService::API::Base +inflect_names+ option.
 
+== SYNOPSIS:
 
 ==== Inflection examples
 
@@ -354,28 +376,35 @@ It also requires a version of Ruby that includes SOAP support in the standard
 library. At least version 1.8.2 final (2004-12-25) of Ruby is recommended; this
 is the version tested against.
 
+== REQUIREMENTS:
 
-== Download
+* FIX (list of requirements)
 
-The latest Action Web Service version can be downloaded from
-http://rubyforge.org/projects/actionservice
+== INSTALL:
 
+gem install actionwebservice
 
-== Installation
+== LICENSE:
 
-You can install Action Web Service with the following command.
+(The MIT License)
 
-  % [sudo] ruby setup.rb
+Copyright (c) 2010 Andrew Forward
 
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
-== License
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-Action Web Service is released under the MIT license.
-
-
-== Support
-
-The Ruby on Rails mailing list
-
-Or, to contact the author, send mail to bitserf@gmail.com
-
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,3 +1,39 @@
+# -*- encoding: utf-8 -*-
+
+Gem::Specification.new do |s|
+  s.name = %q{geokit-premier}
+  s.version = "0.0.4"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.author = "Andrew Forward (forked from Leon Breedt, Kent Sibilev)"
+  s.date = %q{2010-12-14}
+  s.description = %q{Geokit Premier Gem}
+  s.email = ["aforward@gmail.com"]
+  s.extra_rdoc_files = ["Manifest.txt", "README.markdown"]
+  
+  
+  s.files = ["Manifest.txt", "README.markdown", "Rakefile", "lib/geokit/geocoders.rb", "lib/geokit.rb", "lib/geokit/mappable.rb", "spec/geocoder_spec.rb", "spec/spec_helper.rb", "test/test_base_geocoder.rb", "test/test_bounds.rb", "test/test_ca_geocoder.rb", "test/test_geoloc.rb", "test/test_google_geocoder.rb", "test/test_latlng.rb", "test/test_multi_geocoder.rb", "test/test_us_geocoder.rb", "test/test_yahoo_geocoder.rb"]
+  
+  
+  s.has_rdoc = true
+  s.homepage = %q{http://github.com/aforward/actionwebservice}
+  s.rdoc_options = ["--main", "README.markdown"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = %q{1.3.5}
+  s.summary = %q{none}
+  s.test_files = ["spec/geocoder_spec.rb", "test/test_base_geocoder.rb", "test/test_bounds.rb", "test/test_ca_geocoder.rb", "test/test_geoloc.rb", 
+  								"test/test_geoplugin_geocoder.rb", "test/test_google_geocoder.rb", "test/test_google_reverse_geocoder.rb", 
+  								"test/test_inflector.rb", "test/test_ipgeocoder.rb", "test/test_latlng.rb", "test/test_multi_geocoder.rb", 
+  								"test/test_multi_ip_geocoder.rb", "test/test_us_geocoder.rb", "test/test_yahoo_geocoder.rb"]
+
+  if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
+    s.specification_version = 2
+  end
+end
+
+
+
 Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.name = 'actionwebservice'
@@ -5,17 +41,11 @@ Gem::Specification.new do |s|
   s.description = %q{Adds WSDL/SOAP and XML-RPC web service support to Action Pack}
   s.version = '2.3.2'
 
-  s.author = "Leon Breedt, Kent Sibilev"
-  s.email = "bitserf@gmail.com, ksibilev@yahoo.com"
-  s.rubyforge_project = "aws"
-  s.homepage = "http://www.rubyonrails.org"
-
-  s.add_dependency('actionpack', '= 2.3.2')
-  s.add_dependency('activerecord', '= 2.3.2')
-
-  s.has_rdoc = true
-  s.requirements << 'none'
-  s.require_path = 'lib'
+  
+  # s.rubyforge_project = "aws"
+  # s.add_dependency('actionpack', '> 2.3.2')
+  # s.add_dependency('activerecord', '> 2.3.2')
+  # s.requirements << 'none'
 
   s.files = [ "Rakefile", "setup.rb", "README", "TODO", "CHANGELOG", "MIT-LICENSE" ]
   s.files = s.files + 
