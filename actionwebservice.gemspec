@@ -39,12 +39,12 @@ Gem::Specification.new do |s|
   s.name = 'actionwebservice'
   s.summary = "Web service support for Action Pack."
   s.description = %q{Adds WSDL/SOAP and XML-RPC web service support to Action Pack}
-  s.version = '2.3.2'
+  s.version = '2.3.8'
 
   
   # s.rubyforge_project = "aws"
-  # s.add_dependency('actionpack', '> 2.3.2')
-  # s.add_dependency('activerecord', '> 2.3.2')
+  # s.add_dependency('actionpack', '> 2.3.0')
+  # s.add_dependency('activerecord', '> 2.3.0')
   # s.requirements << 'none'
 
   s.files = [ "Rakefile", "setup.rb", "README", "TODO", "CHANGELOG", "MIT-LICENSE" ]
