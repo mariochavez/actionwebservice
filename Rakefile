@@ -10,7 +10,7 @@ Hoe.plugin :newgem
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
-$hoe = Hoe.spec 'action_web_service' do
+$hoe = Hoe.spec 'actionwebservice' do
   self.developer 'Andrew Forward', 'andrew.forward@cenx.com'
   self.summary="Fork of datanoise-actionwebservice to enable plugin with Rails 2.3.8"
   self.post_install_message = 'PostInstall.txt'
