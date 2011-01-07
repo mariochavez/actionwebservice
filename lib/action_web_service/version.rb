@@ -3,7 +3,7 @@ module ActionWebService
     MAJOR = 2
     MINOR = 3
     TINY  = 8
-    BUILD = 3
+    BUILD = 100
 
     STRING = [MAJOR, MINOR, TINY, BUILD].join('.')
   end
