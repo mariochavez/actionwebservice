@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "action_web_service/version"
 
 Gem::Specification.new do |s|
-  s.name        = "aforward-actionwebservice"
+  s.name        = "actionwebservice"
   s.version     = ActionWebService::VERSION::STRING
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew Forward (forked from Leon Breedt, Kent Sibilev)"]
